@@ -1,17 +1,17 @@
 # Cytron_SmartDriveDuo
 
-Arduino Library for Cytron Smart Drive Duo Motor Driver Series
+Arduino Library for Cytron Smart Drive Duo Motor Driver Series for the teensy
 
-Maintained by Idris ([idris@cytron.io](mailto:idris@cytron.io))
+Maintained by Nobody, As is
 
-## Installing
-- **Manual install:**
- 
-  Download the library as .zip file and extract it to Arduino libraries directory.
+
+ Download the library as .zip file and extract it to Arduino libraries directory.
   
-## Related tutorials
-Coming soon...
+to use example: 
 
-## Contribution
-1. Having an issue? or looking for support? [Open an issue](https://github.com/CytronTechnologies/Cytron_SmartDriveDuo/issues) or post in our [technical forum](http://forum.cytron.com.my/).
-2. Got a new feature or a bug fix? Fork the repo, make your changes, and submit a pull request.
+Cytron_SmartDriveDuo smartDriveDuo301(SERIAL_SIMPLIFIED, 1, 115200); // Use Serial1
+Cytron_SmartDriveDuo smartDriveDuo302(SERIAL_SIMPLIFIED, 2, 115200); // Use Serial2
+
+// Control the two motor controllers
+smartDriveDuo301.control(speedLeft, speedRight);
+smartDriveDuo302.control(speedLeft, speedRight);
